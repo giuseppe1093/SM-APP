@@ -1,0 +1,19 @@
+body {
+	background-color: #2196f3;
+}
+
+p {
+	font-size: 200%;
+	color: #ffeb3b;
+}
+div {
+	font-family: helvetica;
+	background-color: #ffeb3b;
+	height: auto;
+	border: 2px solid silver;
+	border-radius:8px;
+	box-shadow: 1px black;
+	padding: 1em;
+	margin: 0 1em 1em 1em;
+	word-wrap: break-word;
+}

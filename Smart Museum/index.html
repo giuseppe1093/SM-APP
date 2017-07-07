@@ -1,0 +1,15 @@
+<!-- PAGINA PRIMARIA (UNICA PAGINA DA ESSERE APERTA, APERTURA AUTOMATICA A CAUSA DEL SUO NOME 'index.html' ) -->
+<!doctype html>
+<html lang="it">
+	<head>
+        <title>Smart Museum</title>
+		<meta charset="utf-8">
+    </head>
+    <frameset rows="90,*" border="1">	<!-- creazione frame -->
+        <frame name="header" src="intestazione.html" noresize="noresize">	<!-- Frame dedicato al menù. Si aprirà come predefinita la pagina 
+																							intestazione.html. Il suo contenuto non DEVE cambiare. -->
+		<frame name="home" src="home.php">	<!-- Frame dedicato alla visualizzazione dei contenuti e della home. 
+																	Si aprirà come  predefinita la pagina home.php che verrà cambiata 
+																	in base alle operazioni che si vorrano effettuare -->
+    </frameset>
+</html>

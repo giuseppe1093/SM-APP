@@ -1,0 +1,54 @@
+body {
+	background-color: #2196f3;
+}
+
+label {
+	font-family: verdana;
+	font-size: 200%;
+	color: #ffeb3b;
+}
+
+#presentazione {
+	color: #ffeb3b;
+	font-family: verdana;
+	height: 5em;
+}
+
+
+hr {
+	height: 2px;
+	background-color: #ffeb3b;
+}
+button {
+	cursor: pointer;
+	font-size: 150%;
+	background-color: #ffeb3b;
+	border-radius: 8px;
+	height: 1.5em;
+	width: auto;
+}
+
+.des{
+	background-color: #ffeb3b;
+	width: auto;
+	padding: 1em;
+	border: 1px solid black;
+	border-radius: 8px;
+	display: inline-block; 
+	text-align: center;
+	font-family: verdana;
+}
+
+button:visited {
+	color: grey;
+}
+
+button:hover {
+	color: #2196f3;
+}
+
+img {
+	border: 2px double #ffeb3b;
+	width: 15em;
+	height: 15em;
+}
