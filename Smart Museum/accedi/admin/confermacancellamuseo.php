@@ -53,6 +53,7 @@ if (!$result = $connessione->query("SELECT * FROM scheda WHERE Museo_idMuseo ='"
         }
     }
 }
+}
 
 //RIMOZIONE TUPLA MUSEO DA DATABASE E IMMAGINE DA SERVER
 if (!$result = $connessione->query("SELECT * FROM museo WHERE idMuseo ='" . $idmuseo . "'")) { // query selezione museo per memorizzare il nome del immagine da eliminare dal server
