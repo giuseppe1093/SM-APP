@@ -1,0 +1,39 @@
+body {
+	background-color: #2196f3;
+}
+
+label {
+	font-family: verdana;
+	font-size: 50;
+	color: #ffeb3b;
+}
+
+input {
+	border: 1px solid black;
+	border-radius: 8px;
+	padding: 0.2em 1em;
+	cursor: pointer;
+}
+
+a {
+	font-family: verdana;
+	font-size: 100%;
+	background-color: #ffeb3b;
+	border: 1px solid black;
+	border-radius: 8px;
+	padding: 0.2em 1em;
+	text-decoration: none;
+}
+
+a:visited {
+	color: grey;
+}
+
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2196f3;
+}

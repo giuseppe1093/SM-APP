@@ -1,0 +1,56 @@
+body {
+	background-color: #2196f3;
+}
+
+a {
+	border: 1px solid black;
+	border-radius: 8px;
+	padding: 0.2em 1em;
+	text-decoration: none;
+	width: 6em;
+	height: 6em;
+	background-color: silver;
+}
+
+a:visited {
+	color: grey;
+}
+
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2196f3;
+}
+
+label {
+	background-color: #ffeb3b;
+	width: auto;
+	padding: 0 1em;
+	border: 1px solid black;
+	border-radius: 8px;
+	display: inline-block; 
+	text-align: center;
+	font-family: verdana;
+}
+
+button {
+	border: 1px solid black;
+	border-radius: 8px;
+	padding: 0.2em 1em;
+}
+
+button:visited {
+	color: grey;
+}
+
+button:link {
+	color: black;
+	text-decoration: none;
+}
+
+button:hover {
+	color: #2196f3;
+}
