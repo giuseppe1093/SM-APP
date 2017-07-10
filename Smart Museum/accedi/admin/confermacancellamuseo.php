@@ -22,13 +22,11 @@ $idmuseo = $idmuseo[0];					//A noi serve solamente la prima sottostringha che c
 //rimozione tuple personale
 if (!$result = $connessione->query("DELETE FROM personale WHERE Museo_idMuseo ='" . $idmuseo . "'")) { // query rimozione personale
     echo "Errore della query: " . $connessione->error . ".";  //controllo errore
-    exit();
 }
 
 //rimozione tuple opere
 if (!$result = $connessione->query("SELECT * FROM scheda WHERE Museo_idMuseo ='" . $idmuseo . "'")) { // query selezione opere
     echo "Errore della query: " . $connessione->error . ".";  //controllo errore
-    exit();
 } else {
     if ($result->num_rows != 0) {  // conteggio dei record 
         while ($tmp = $result->fetch_array(MYSQLI_ASSOC)) {  //associazioni della tabella risultante all'array tmp
@@ -49,7 +47,6 @@ if (!$result = $connessione->query("SELECT * FROM scheda WHERE Museo_idMuseo ='"
 	//rimozione tuple opere da database
 		if (!$result = $connessione->query("DELETE FROM scheda WHERE Museo_idMuseo ='" . $idmuseo . "'")) {
             echo "Errore della query: " . $connessione->error . ".";  //controllo errore
-            exit();
         }
     }
 }
@@ -58,7 +55,6 @@ if (!$result = $connessione->query("SELECT * FROM scheda WHERE Museo_idMuseo ='"
 //RIMOZIONE TUPLA MUSEO DA DATABASE E IMMAGINE DA SERVER
 if (!$result = $connessione->query("SELECT * FROM museo WHERE idMuseo ='" . $idmuseo . "'")) { // query selezione museo per memorizzare il nome del immagine da eliminare dal server
     echo "Errore della query: " . $connessione->error . ".";  //controllo errore
-    exit();
 } else {
     if ($result->num_rows > 0) {  // conteggio dei record 
         while ($tmp = $result->fetch_array(MYSQLI_ASSOC)) {  //associazioni della tabella risultante all'array tmp
@@ -73,7 +69,6 @@ if (!$result = $connessione->query("SELECT * FROM museo WHERE idMuseo ='" . $idm
 //prelevo nome del museo da cancellare
 if (!$result = $connessione->query("SELECT * FROM museo WHERE idMuseo ='" . $idmuseo . "'")) { // query selezione museo per memorizzare il nome del immagine da eliminare dal server
     echo "Errore della query: " . $connessione->error . ".";  //controllo errore
-    exit();
 } else {
 	while ($tmp = $result->fetch_array(MYSQLI_ASSOC)) {  //associazioni della tabella risultante all'array tmp
 		$nomemuseo=$tmp['Nome'];
@@ -83,7 +78,6 @@ if (!$result = $connessione->query("SELECT * FROM museo WHERE idMuseo ='" . $idm
 //rimozione tupla museo
 if (!$result = $connessione->query("DELETE FROM museo WHERE idMuseo ='" . $idmuseo . "'")) { // query rimozione museo
     echo "Errore della query: " . $connessione->error . ".";  //controllo errore
-    exit();
 }else{
 echo "<label>Museo ".$nomemuseo." Cancellato!</label><br><br>";
 	echo '<a class="pulsante" href="http://localhost/Smart Museum/accedi/operazioniadmin.php">Continua</a>';
